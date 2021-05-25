@@ -6,13 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <script>       
-        function cadastraNotas() {
-            let notas = [],
-                quantidade = +prompt("Digite a quantidade de notas")
 
-            for (let i = 0; i < quantidade; i++) {
-                notas[i] = prompt(`Digite a ${i + 1} nota`)
+    <script>
+
+
+
+function cadastraNotas() {
+            let notas = []
+
+            for (let i = 0; i < 3; i++) {
+                notas[i] = +prompt(`Digite a ${i + 1} nota`)
+
             }
             
             return notas
@@ -26,12 +30,24 @@
             
             return somaNotas / notas.length
         }        
+2
         
         let notas = cadastraNotas()
         let media = calculaMedia(notas)
 
         alert(`Média: ${media.toFixed(2)}`)
        
-    </script>
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
